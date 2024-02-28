@@ -9,6 +9,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background-color: #f4e4ba;
+    width: 100vw;
 }
 .container{
     background-color: #fff;
@@ -20,6 +21,7 @@ body{
 }
 .form{
     margin: 2rem 0 1rem 0;
+    
 }
 form select, input,button{
     width: 100%;
@@ -79,4 +81,48 @@ form button:hover{
 }
 .owner{
     float: right;
+}
+.upperheading{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:1171px) {
+    .dropdown{
+        flex-direction: column;
+         
+    }
+    .container{
+        width: 100%;
+    }
+      
+}
+@media (max-width:428px) {
+   .container{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 8px;
+   }
+   form{
+     display: flex;
+     flex-direction: column; 
+    /* justify-content: center; */
+  
+    border-radius:1rem ;
+    box-shadow: 2px 1px 12px 8px black;
+    align-items: center;  
+    
+   }
+    .owner{
+    position: absolute;
+    bottom: 15px;
+    right: 2px;
+    }
+    .upperheading{
+       justify-content: center;
+
+    }
 }
